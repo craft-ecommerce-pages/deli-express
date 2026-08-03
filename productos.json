@@ -217,7 +217,9 @@
     ],
     "descripcion": "El clásico subido de nivel: tocino crocante y guacamole fresco en cada mordida.",
     "stock": null,
-    "imagenes": null,
+    "imagenes": [
+      "/producto/hotdog-especial/images/hotdog-especial-1.webp"
+    ],
     "variantes": [],
     "sku": ""
   },
