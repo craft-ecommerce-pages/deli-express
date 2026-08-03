@@ -200,7 +200,9 @@
     ],
     "descripcion": "Salchicha jugosa en pan suave, con papas al hilo y nuestras salsas de la casa.",
     "stock": null,
-    "imagenes": null,
+    "imagenes": [
+      "/producto/hotdog-clasico/images/hotdog-clasico-1.webp"
+    ],
     "variantes": [],
     "sku": ""
   },
