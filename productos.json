@@ -10,14 +10,13 @@
     ],
     "descripcion": "La porción para la mesa completa: quince alitas crocantes y tu salsa preferida.",
     "stock": null,
-    "imagenes": null,
+    "imagenes": [
+      "/producto/alitas-x-15-unidades/images/alitas-x-15-unidades-1.webp"
+    ],
     "variantes": [
       {
-        "options": [
-          "BBQ",
-          "Honey Mustard",
-          "Buffalo"
-        ]
+        "options": [],
+        "type": "option"
       }
     ],
     "sku": ""
