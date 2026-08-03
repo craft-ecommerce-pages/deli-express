@@ -76,7 +76,9 @@
     ],
     "descripcion": "Chorizo a la parrilla en rodajas sobre papas crocantes, con nuestras salsas artesanales.",
     "stock": null,
-    "imagenes": null,
+    "imagenes": [
+      "/producto/choripapa/images/choripapa-1.webp"
+    ],
     "variantes": [],
     "sku": ""
   },
