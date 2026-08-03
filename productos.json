@@ -33,14 +33,13 @@
     ],
     "descripcion": "Cinco alitas crocantes bañadas en la salsa de tu elección. Ideal para un antojo personal.",
     "stock": null,
-    "imagenes": null,
+    "imagenes": [
+      "/producto/alitas-x-5-unidades/images/alitas-x-5-unidades-1.webp"
+    ],
     "variantes": [
       {
-        "options": [
-          "BBQ",
-          "Honey Mustard",
-          "Buffalo"
-        ]
+        "options": [],
+        "type": "option"
       }
     ],
     "sku": ""
