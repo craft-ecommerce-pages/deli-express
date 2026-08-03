@@ -55,14 +55,13 @@
     ],
     "descripcion": "Ocho alitas doradas para compartir… o no. Elige tu salsa favorita.",
     "stock": null,
-    "imagenes": null,
+    "imagenes": [
+      "/producto/alitas-x-8-unidades/images/alitas-x-8-unidades-1.webp"
+    ],
     "variantes": [
       {
-        "options": [
-          "BBQ",
-          "Honey Mustard",
-          "Buffalo"
-        ]
+        "options": [],
+        "type": "option"
       }
     ],
     "sku": ""
