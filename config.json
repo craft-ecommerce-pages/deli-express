@@ -1,3 +1,18 @@
 {
-  "categories": {}
+  "badge_category": "alitas",
+  "categories": {
+    "alitas": "Alitas",
+    "hamburguesas": "Hamburguesas",
+    "hotdogs": "Hot Dogs",
+    "papas": "Papas",
+    "bebidas": "Bebidas y Extras"
+  },
+  "currency": "$",
+  "hero_title": "Antojos que <span class=\"hl\">no esperan</span> 🔥",
+  "site_title": "Deli Xpress – Fast Food & Drinks",
+  "store_name": "Deli Xpress",
+  "theme_accent": "#F2C230",
+  "theme_primary": "#C0182B",
+  "whatsapp_message": "¡Hola Deli Xpress! Quiero hacer un pedido:",
+  "whatsapp_number": "593986265852"
 }
