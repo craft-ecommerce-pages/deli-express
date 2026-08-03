@@ -2,14 +2,14 @@
   "badge_category": "alitas",
   "categories": {
     "alitas": "Alitas",
+    "bebidas": "Bebidas y Extras",
     "hamburguesas": "Hamburguesas",
     "hotdogs": "Hot Dogs",
-    "papas": "Papas",
-    "bebidas": "Bebidas y Extras"
+    "papas": "Papas"
   },
   "currency": "$",
-  "hero_title": "Antojos que <span class=\"hl\">no esperan</span> 🔥",
-  "site_title": "Deli Xpress – Fast Food & Drinks",
+  "hero_title": "Antojos que \u003cspan class=\"hl\"\u003eno esperan\u003c/span\u003e 🔥",
+  "site_title": "Deli Xpress – Fast Food \u0026 Drinks",
   "store_name": "Deli Xpress",
   "theme_accent": "#F2C230",
   "theme_primary": "#C0182B",

@@ -1,1 +1,296 @@
-[]
+[
+  {
+    "id": "f10db605-5b7e-4a73-8ec9-6eca4b7511b4",
+    "slug": "alitas-x-15-unidades",
+    "nombre": "Alitas x 15 unidades",
+    "precio": "12.50",
+    "precio_promo": "",
+    "categorias": [
+      "alitas"
+    ],
+    "descripcion": "La porción para la mesa completa: quince alitas crocantes y tu salsa preferida.",
+    "stock": null,
+    "imagenes": null,
+    "variantes": [
+      {
+        "options": [
+          "BBQ",
+          "Honey Mustard",
+          "Buffalo"
+        ]
+      }
+    ],
+    "sku": ""
+  },
+  {
+    "id": "971f0989-8110-46f9-87b2-588942ba9cb6",
+    "slug": "alitas-x-5-unidades",
+    "nombre": "Alitas x 5 unidades",
+    "precio": "5.00",
+    "precio_promo": "",
+    "categorias": [
+      "alitas"
+    ],
+    "descripcion": "Cinco alitas crocantes bañadas en la salsa de tu elección. Ideal para un antojo personal.",
+    "stock": null,
+    "imagenes": null,
+    "variantes": [
+      {
+        "options": [
+          "BBQ",
+          "Honey Mustard",
+          "Buffalo"
+        ]
+      }
+    ],
+    "sku": ""
+  },
+  {
+    "id": "0e6a084c-5277-406b-817d-55bc3be56290",
+    "slug": "alitas-x-8-unidades",
+    "nombre": "Alitas x 8 unidades",
+    "precio": "7.50",
+    "precio_promo": "",
+    "categorias": [
+      "alitas"
+    ],
+    "descripcion": "Ocho alitas doradas para compartir… o no. Elige tu salsa favorita.",
+    "stock": null,
+    "imagenes": null,
+    "variantes": [
+      {
+        "options": [
+          "BBQ",
+          "Honey Mustard",
+          "Buffalo"
+        ]
+      }
+    ],
+    "sku": ""
+  },
+  {
+    "id": "d0b241a2-0d91-4e48-8539-eb1698ed8db7",
+    "slug": "choripapa",
+    "nombre": "Choripapa",
+    "precio": "2.50",
+    "precio_promo": "",
+    "categorias": [
+      "papas"
+    ],
+    "descripcion": "Chorizo a la parrilla en rodajas sobre papas crocantes, con nuestras salsas artesanales.",
+    "stock": null,
+    "imagenes": null,
+    "variantes": [],
+    "sku": ""
+  },
+  {
+    "id": "d89bdf67-b4fb-4a54-b992-7a0ec12a162c",
+    "slug": "gaseosa-1-litro",
+    "nombre": "Gaseosa 1 litro",
+    "precio": "1.00",
+    "precio_promo": "",
+    "categorias": [
+      "bebidas"
+    ],
+    "descripcion": "Para compartir en la mesa.",
+    "stock": null,
+    "imagenes": null,
+    "variantes": [],
+    "sku": ""
+  },
+  {
+    "id": "80f8f4a6-a95a-4130-abed-7fe485e39218",
+    "slug": "gaseosa-2-litros",
+    "nombre": "Gaseosa 2 litros",
+    "precio": "2.00",
+    "precio_promo": "",
+    "categorias": [
+      "bebidas"
+    ],
+    "descripcion": "La botella grande, para que a nadie le falte.",
+    "stock": null,
+    "imagenes": null,
+    "variantes": [],
+    "sku": ""
+  },
+  {
+    "id": "e56bee15-3acd-4d85-9d41-833612930415",
+    "slug": "gaseosa-pequena",
+    "nombre": "Gaseosa pequeña",
+    "precio": "0.50",
+    "precio_promo": "",
+    "categorias": [
+      "bebidas"
+    ],
+    "descripcion": "Bien fría, para bajar el antojo.",
+    "stock": null,
+    "imagenes": null,
+    "variantes": [],
+    "sku": ""
+  },
+  {
+    "id": "4a11f1fb-8835-433d-a350-9816e31aeae6",
+    "slug": "gaseosa-personal",
+    "nombre": "Gaseosa personal",
+    "precio": "1.00",
+    "precio_promo": "",
+    "categorias": [
+      "bebidas"
+    ],
+    "descripcion": "Tu bebida favorita en tamaño personal.",
+    "stock": null,
+    "imagenes": null,
+    "variantes": [],
+    "sku": ""
+  },
+  {
+    "id": "a960df2c-343c-4312-abd9-ef8521d9e687",
+    "slug": "gatorade",
+    "nombre": "Gatorade",
+    "precio": "1.00",
+    "precio_promo": "",
+    "categorias": [
+      "bebidas"
+    ],
+    "descripcion": "Hidratación al instante para acompañar tu pedido.",
+    "stock": null,
+    "imagenes": null,
+    "variantes": [],
+    "sku": ""
+  },
+  {
+    "id": "aea4d0d7-6d30-4d8f-9972-b0c885216665",
+    "slug": "hamburguesa-bbq-especial",
+    "nombre": "Hamburguesa BBQ Especial",
+    "precio": "3.75",
+    "precio_promo": "",
+    "categorias": [
+      "hamburguesas"
+    ],
+    "descripcion": "Carne de res a la parrilla, queso cheddar fundido y nuestra salsa BBQ ahumada en pan artesano. Incluye papas fritas crujientes.",
+    "stock": null,
+    "imagenes": null,
+    "variantes": [],
+    "sku": ""
+  },
+  {
+    "id": "149d76b4-8a0d-4105-8cad-30477b7c40a0",
+    "slug": "hamburguesa-clasica",
+    "nombre": "Hamburguesa Clásica",
+    "precio": "3.50",
+    "precio_promo": "",
+    "categorias": [
+      "hamburguesas"
+    ],
+    "descripcion": "Jugosa carne de res, queso cheddar, vegetales frescos (lechuga y tomate) y mayonesa artesanal en pan artesano. Incluye papas fritas crujientes.",
+    "stock": null,
+    "imagenes": null,
+    "variantes": [],
+    "sku": ""
+  },
+  {
+    "id": "29fa957b-563a-493d-9f81-e5ea3524df4f",
+    "slug": "hotdog-clasico",
+    "nombre": "Hotdog Clásico",
+    "precio": "2.00",
+    "precio_promo": "",
+    "categorias": [
+      "hotdogs"
+    ],
+    "descripcion": "Salchicha jugosa en pan suave, con papas al hilo y nuestras salsas de la casa.",
+    "stock": null,
+    "imagenes": null,
+    "variantes": [],
+    "sku": ""
+  },
+  {
+    "id": "084620b4-6565-480f-bef3-83ffaba89bca",
+    "slug": "hotdog-especial",
+    "nombre": "Hotdog Especial",
+    "precio": "2.50",
+    "precio_promo": "",
+    "categorias": [
+      "hotdogs"
+    ],
+    "descripcion": "El clásico subido de nivel: tocino crocante y guacamole fresco en cada mordida.",
+    "stock": null,
+    "imagenes": null,
+    "variantes": [],
+    "sku": ""
+  },
+  {
+    "id": "974e758e-5da2-48f7-876d-b7d64250dbdc",
+    "slug": "papa-burger",
+    "nombre": "Papa Burger",
+    "precio": "3.50",
+    "precio_promo": "",
+    "categorias": [
+      "papas"
+    ],
+    "descripcion": "Carne de hamburguesa sobre papas a la francesa, coronada con queso cheddar fundido.",
+    "stock": null,
+    "imagenes": null,
+    "variantes": [],
+    "sku": ""
+  },
+  {
+    "id": "a8eba5ea-4ef9-4240-b324-271cada30659",
+    "slug": "papa-pollo-broster",
+    "nombre": "Papa + Pollo Broster",
+    "precio": "3.00",
+    "precio_promo": "",
+    "categorias": [
+      "papas"
+    ],
+    "descripcion": "Papas a la francesa acompañadas de pollo broster crocante por fuera y jugoso por dentro.",
+    "stock": null,
+    "imagenes": null,
+    "variantes": [],
+    "sku": ""
+  },
+  {
+    "id": "b6bf7ab1-9f89-4206-be6b-4d3670bf7d4f",
+    "slug": "porcion-de-papas",
+    "nombre": "Porción de papas",
+    "precio": "1.25",
+    "precio_promo": "",
+    "categorias": [
+      "bebidas"
+    ],
+    "descripcion": "Papas a la francesa crocantes y bien doradas, el acompañante de siempre.",
+    "stock": null,
+    "imagenes": null,
+    "variantes": [],
+    "sku": ""
+  },
+  {
+    "id": "3cd3ca72-51b3-44c7-9f01-0db357915b95",
+    "slug": "powerade",
+    "nombre": "Powerade",
+    "precio": "1.50",
+    "precio_promo": "",
+    "categorias": [
+      "bebidas"
+    ],
+    "descripcion": "Refrescante e hidratante, bien fría.",
+    "stock": null,
+    "imagenes": null,
+    "variantes": [],
+    "sku": ""
+  },
+  {
+    "id": "50c3f7ed-eb63-4dc4-b0a3-d5a7c7522f33",
+    "slug": "salchipapa",
+    "nombre": "Salchipapa",
+    "precio": "2.25",
+    "precio_promo": "",
+    "categorias": [
+      "papas"
+    ],
+    "descripcion": "Papas a la francesa crocantes con salchicha dorada al grill y salsas de la casa.",
+    "stock": null,
+    "imagenes": null,
+    "variantes": [],
+    "sku": ""
+  }
+]
