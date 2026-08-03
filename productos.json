@@ -138,7 +138,9 @@
     ],
     "descripcion": "Tu bebida favorita en tamaño personal.",
     "stock": null,
-    "imagenes": null,
+    "imagenes": [
+      "/producto/gaseosa-personal/images/gaseosa-personal-1.webp"
+    ],
     "variantes": [],
     "sku": ""
   },
