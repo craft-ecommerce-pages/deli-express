@@ -166,7 +166,9 @@
     ],
     "descripcion": "Carne de res a la parrilla, queso cheddar fundido y nuestra salsa BBQ ahumada en pan artesano. Incluye papas fritas crujientes.",
     "stock": null,
-    "imagenes": null,
+    "imagenes": [
+      "/producto/hamburguesa-bbq-especial/images/hamburguesa-bbq-especial-1.webp"
+    ],
     "variantes": [],
     "sku": ""
   },
