@@ -251,7 +251,9 @@
     ],
     "descripcion": "Papas a la francesa acompañadas de pollo broster crocante por fuera y jugoso por dentro.",
     "stock": null,
-    "imagenes": null,
+    "imagenes": [
+      "/producto/papa-pollo-broster/images/papa-pollo-broster-1.webp"
+    ],
     "variantes": [],
     "sku": ""
   },
