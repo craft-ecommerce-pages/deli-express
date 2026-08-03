@@ -157,7 +157,9 @@
     ],
     "descripcion": "Hidratación al instante para acompañar tu pedido.",
     "stock": null,
-    "imagenes": null,
+    "imagenes": [
+      "/producto/gatorade/images/gatorade-1.webp"
+    ],
     "variantes": [],
     "sku": ""
   },
