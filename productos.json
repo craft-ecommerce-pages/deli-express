@@ -218,7 +218,7 @@
     "id": "149d76b4-8a0d-4105-8cad-30477b7c40a0",
     "slug": "hamburguesa-clasica",
     "nombre": "Hamburguesa Clásica",
-    "precio": "3",
+    "precio": "3.00",
     "precio_promo": "",
     "categorias": [
       "hamburguesas"
