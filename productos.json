@@ -10,11 +10,10 @@
     ],
     "descripcion": "La porción para la mesa completa: quince alitas crocantes y tu salsa preferida.",
     "stock": null,
-    "imagenes": [
-      "/producto/alitas-x-15-unidades/images/alitas-x-15-unidades-1.webp"
-    ],
+    "imagenes": null,
     "variantes": [
       {
+        "name": "Salsa",
         "options": [
           "BBQ",
           "Honey Mustard",
@@ -36,11 +35,10 @@
     ],
     "descripcion": "Cinco alitas crocantes bañadas en la salsa de tu elección. Ideal para un antojo personal.",
     "stock": null,
-    "imagenes": [
-      "/producto/alitas-x-5-unidades/images/alitas-x-5-unidades-1.webp"
-    ],
+    "imagenes": null,
     "variantes": [
       {
+        "name": "Salsa",
         "options": [],
         "type": "option"
       }
@@ -58,11 +56,10 @@
     ],
     "descripcion": "Ocho alitas doradas para compartir… o no. Elige tu salsa favorita.",
     "stock": null,
-    "imagenes": [
-      "/producto/alitas-x-8-unidades/images/alitas-x-8-unidades-1.webp"
-    ],
+    "imagenes": null,
     "variantes": [
       {
+        "name": "Salsa",
         "options": [
           "BBQ",
           "Honey Mustard",
@@ -84,9 +81,7 @@
     ],
     "descripcion": "Chorizo a la parrilla en rodajas sobre papas crocantes, con nuestras salsas artesanales.",
     "stock": null,
-    "imagenes": [
-      "/producto/choripapa/images/choripapa-1.webp"
-    ],
+    "imagenes": null,
     "variantes": [],
     "sku": ""
   },
@@ -116,9 +111,7 @@
     ],
     "descripcion": "La botella grande, para que a nadie le falte.",
     "stock": null,
-    "imagenes": [
-      "/producto/gaseosa-2-litros/images/gaseosa-2-litros-1.webp"
-    ],
+    "imagenes": null,
     "variantes": [],
     "sku": ""
   },
@@ -133,9 +126,7 @@
     ],
     "descripcion": "Bien fría, para bajar el antojo.",
     "stock": null,
-    "imagenes": [
-      "/producto/gaseosa-pequena/images/gaseosa-pequena-1.webp"
-    ],
+    "imagenes": null,
     "variantes": [],
     "sku": ""
   },
@@ -150,9 +141,7 @@
     ],
     "descripcion": "Tu bebida favorita en tamaño personal.",
     "stock": null,
-    "imagenes": [
-      "/producto/gaseosa-personal/images/gaseosa-personal-1.webp"
-    ],
+    "imagenes": null,
     "variantes": [],
     "sku": ""
   },
@@ -167,9 +156,7 @@
     ],
     "descripcion": "Hidratación al instante para acompañar tu pedido.",
     "stock": null,
-    "imagenes": [
-      "/producto/gatorade/images/gatorade-1.webp"
-    ],
+    "imagenes": null,
     "variantes": [],
     "sku": ""
   },
@@ -184,9 +171,7 @@
     ],
     "descripcion": "Carne de res a la parrilla, queso cheddar fundido y nuestra salsa BBQ ahumada en pan artesano. Incluye papas fritas crujientes.",
     "stock": null,
-    "imagenes": [
-      "/producto/hamburguesa-bbq-especial/images/hamburguesa-bbq-especial-1.webp"
-    ],
+    "imagenes": null,
     "variantes": [],
     "sku": ""
   },
@@ -201,9 +186,7 @@
     ],
     "descripcion": "Jugosa carne de res, queso cheddar, vegetales frescos (lechuga y tomate) y mayonesa artesanal en pan artesano. Incluye papas fritas crujientes.",
     "stock": null,
-    "imagenes": [
-      "/producto/hamburguesa-clasica/images/hamburguesa-clasica-1.webp"
-    ],
+    "imagenes": null,
     "variantes": [],
     "sku": ""
   },
@@ -218,9 +201,7 @@
     ],
     "descripcion": "Salchicha jugosa en pan suave, con papas al hilo y nuestras salsas de la casa.",
     "stock": null,
-    "imagenes": [
-      "/producto/hotdog-clasico/images/hotdog-clasico-1.webp"
-    ],
+    "imagenes": null,
     "variantes": [],
     "sku": ""
   },
@@ -235,9 +216,7 @@
     ],
     "descripcion": "El clásico subido de nivel: tocino crocante y guacamole fresco en cada mordida.",
     "stock": null,
-    "imagenes": [
-      "/producto/hotdog-especial/images/hotdog-especial-1.webp"
-    ],
+    "imagenes": null,
     "variantes": [],
     "sku": ""
   },
@@ -252,9 +231,7 @@
     ],
     "descripcion": "Carne de hamburguesa sobre papas a la francesa, coronada con queso cheddar fundido.",
     "stock": null,
-    "imagenes": [
-      "/producto/papa-burger/images/papa-burger-1.webp"
-    ],
+    "imagenes": null,
     "variantes": [],
     "sku": ""
   },
@@ -269,9 +246,7 @@
     ],
     "descripcion": "Papas a la francesa acompañadas de pollo broster crocante por fuera y jugoso por dentro.",
     "stock": null,
-    "imagenes": [
-      "/producto/papa-pollo-broster/images/papa-pollo-broster-1.webp"
-    ],
+    "imagenes": null,
     "variantes": [],
     "sku": ""
   },
@@ -286,9 +261,7 @@
     ],
     "descripcion": "Papas a la francesa crocantes y bien doradas, el acompañante de siempre.",
     "stock": null,
-    "imagenes": [
-      "/producto/porcion-de-papas/images/porcion-de-papas-1.webp"
-    ],
+    "imagenes": null,
     "variantes": [],
     "sku": ""
   },
@@ -303,9 +276,7 @@
     ],
     "descripcion": "Refrescante e hidratante, bien fría.",
     "stock": null,
-    "imagenes": [
-      "/producto/powerade/images/powerade-1.webp"
-    ],
+    "imagenes": null,
     "variantes": [],
     "sku": ""
   },
@@ -320,9 +291,7 @@
     ],
     "descripcion": "Papas a la francesa crocantes con salchicha dorada al grill y salsas de la casa.",
     "stock": null,
-    "imagenes": [
-      "/producto/salchipapa/images/salchipapa-1.webp"
-    ],
+    "imagenes": null,
     "variantes": [],
     "sku": ""
   }
