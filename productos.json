@@ -34,7 +34,9 @@
     "categorias": [],
     "descripcion": "La porción para la mesa completa: veinte alitas crocantes más dos porciones de papa y tu salsa preferida.",
     "stock": null,
-    "imagenes": null,
+    "imagenes": [
+      "/producto/alitas-x20-unidades/images/alitas-x20-unidades-1.webp"
+    ],
     "variantes": [
       {
         "options": [
