@@ -906,7 +906,7 @@
       if(hasVariants){
         variantHTML='<div class="customize-label">Personaliza</div>'+p.variantes.map(g=>`
           <div class="variant-group">
-            <div class="variant-glabel">${g.name}</div>
+            <div class="variant-glabel">${g.name||'Opciones'}</div>
             <div class="variant-options">
               ${g.options.map(opt=>{
                 const oKey=getOptionKey(opt),oDisplay=getOptionDisplay(opt),oPrice=getOptionPrice(opt);
