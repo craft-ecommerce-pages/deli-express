@@ -31,7 +31,9 @@
     "nombre": "Alitas x20 unidades",
     "precio": "15",
     "precio_promo": "",
-    "categorias": [],
+    "categorias": [
+      "alitas"
+    ],
     "descripcion": "La porción para la mesa completa: veinte alitas crocantes más dos porciones de papa y tu salsa preferida.",
     "stock": null,
     "imagenes": [
