@@ -385,6 +385,9 @@
     .variant-option:hover{border-color:var(--border-2)}
     .variant-option.selected{background:linear-gradient(135deg,var(--primary),var(--accent));color:#fff;border-color:transparent}
     .modal-variant-hint{font-size:12px;color:#ff7a7a;margin-top:-6px}
+    .dist-row{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .dist-name{font-size:14px;font-weight:600}
+    .dist-ctrl{flex:0 0 auto}
     .modal-stock-hint{font-size:12px;color:var(--text-soft);margin-top:-6px}
     .modal-actions{margin-top:6px;display:flex;gap:12px;align-items:stretch}
     .modal-qty{display:flex;align-items:center;background:var(--surface-2);border:1px solid var(--border);border-radius:15px;overflow:hidden}
@@ -574,7 +577,7 @@
     let searchQuery = '';
     let categorySlugs = [];
 
-    let modalProduct = null, modalQty = 1, modalVariants = {}, sliderIdx = 0, sliderImages = [];
+    let modalProduct = null, modalQty = 1, modalVariants = {}, modalDist = {}, sliderIdx = 0, sliderImages = [];
 
     /* ── DOM REFS ── */
     const $catalog=document.getElementById('catalog'),$searchInput=document.getElementById('searchInput'),
@@ -602,6 +605,14 @@
     const getOptionKey=o=>(typeof o==='object'&&o!==null)?(o.label||''):String(o);
     const getOptionDisplay=getOptionKey;
     const getOptionPrice=o=>(typeof o==='object'&&o!==null&&typeof o.price==='number')?o.price:null;
+    // ponytail: alitas/wings con >=8 uds y >1 salsa → repartir cantidad por salsa. Total sale del nombre ("x 8", "x20").
+    const unitCount=p=>{const m=(p.nombre||'').match(/x\s*(\d+)/i);return m?+m[1]:0;};
+    function wingsDist(p){
+      if(unitCount(p)<8) return null;
+      if(!(p.categorias||[]).some(c=>/alit|wing/i.test(c))) return null;
+      const g=(p.variantes||[]).find(g=>Array.isArray(g.options)&&g.options.length>1);
+      return g?{group:g,total:unitCount(p)}:null;
+    }
 
     function getEffectivePrice(p,variantes){
       if(!variantes||!Object.keys(variantes).length) return parsePrice(p);
@@ -883,7 +894,7 @@
     /* ── PRODUCT MODAL ── */
     function openModal(id){
       const p=products.find(x=>String(x.id)===String(id));if(!p) return;
-      modalProduct=p;modalQty=1;modalVariants={};sliderImages=getImages(p);sliderIdx=0;
+      modalProduct=p;modalQty=1;modalVariants={};modalDist={};sliderImages=getImages(p);sliderIdx=0;
       $sliderTrack.innerHTML=sliderImages.length
         ?sliderImages.map(src=>`<div class="slider-slide"><img src="${src}" alt="${p.nombre}" loading="lazy"/></div>`).join('')
         :`<div class="slider-slide"><span class="slider-placeholder">${catIcon((p.categorias||[])[0],p.nombre)}</span></div>`;
@@ -898,12 +909,26 @@
       const p=modalProduct;
       const hasVariants=Array.isArray(p.variantes)&&p.variantes.length>0;
       const stock=getStockInfo(p);
-      const allSelected=!hasVariants||p.variantes.every(g=>modalVariants[g.name]);
-      const effPrice=allSelected?getEffectivePrice(p,modalVariants):parsePrice(p);
+      const dist=wingsDist(p);
+      const distSum=dist?dist.group.options.reduce((s,o)=>s+(modalDist[getOptionKey(o)]||0),0):0;
+      const allSelected=!hasVariants||(dist?distSum===dist.total:p.variantes.every(g=>modalVariants[g.name]));
+      const effPrice=allSelected&&!dist?getEffectivePrice(p,modalVariants):parsePrice(p);
       const canAddModal=stock.canAdd&&allSelected;
 
       let variantHTML='';
-      if(hasVariants){
+      if(dist){
+        variantHTML='<div class="customize-label">Personaliza</div>'+
+          `<div class="variant-group"><div class="variant-glabel">${dist.group.name||'Sabores'} — ${distSum}/${dist.total}</div>`+
+          dist.group.options.map(opt=>{
+            const k=getOptionKey(opt),c=modalDist[k]||0;
+            return `<div class="dist-row"><span class="dist-name">${getOptionDisplay(opt)}</span>
+              <div class="modal-qty dist-ctrl">
+                <button class="dist-btn" data-dopt="${k}" data-dd="-1" ${c<=0?'disabled':''}>−</button>
+                <span class="qty-val">${c}</span>
+                <button class="dist-btn" data-dopt="${k}" data-dd="1" ${distSum>=dist.total?'disabled':''}>+</button>
+              </div></div>`;
+          }).join('')+`</div>`;
+      } else if(hasVariants){
         variantHTML='<div class="customize-label">Personaliza</div>'+p.variantes.map(g=>`
           <div class="variant-group">
             <div class="variant-glabel">${g.name||'Opciones'}</div>
@@ -926,7 +951,7 @@
         ${stock.badge?`<div><span class="modal-stock-badge ${stock.cls}">${stock.badge}</span></div>`:''}
         ${p.descripcion?`<div class="modal-desc">${p.descripcion}</div>`:''}
         ${variantHTML}
-        ${hasVariants&&!allSelected?'<p class="modal-variant-hint">Selecciona todas las opciones</p>':''}
+        ${hasVariants&&!allSelected?`<p class="modal-variant-hint">${dist?`Reparte ${dist.total} — faltan ${dist.total-distSum}`:'Selecciona todas las opciones'}</p>`:''}
         ${!stock.canAdd&&allSelected?'<p class="modal-stock-hint">Producto agotado</p>':''}
         <div class="modal-actions">
           <div class="modal-qty">
@@ -944,7 +969,20 @@
         if(modalQty>=stock.maxQty){showToast('Stock insuficiente');return;}
         modalQty++;renderModalDetail();
       });
-      document.getElementById('btnModalAdd').addEventListener('click',()=>{cartAdd(modalProduct.id,modalVariants,modalQty);closeModal();});
+      document.getElementById('btnModalAdd').addEventListener('click',()=>{
+        let v=modalVariants;
+        if(dist){
+          const label=dist.group.options.filter(o=>modalDist[getOptionKey(o)]>0)
+            .map(o=>`${getOptionDisplay(o)} x${modalDist[getOptionKey(o)]}`).join(' · ');
+          v={[dist.group.name]:label};
+        }
+        cartAdd(modalProduct.id,v,modalQty);closeModal();
+      });
+      $modalDetail.querySelectorAll('.dist-btn').forEach(btn=>btn.addEventListener('click',()=>{
+        const k=btn.dataset.dopt,dd=+btn.dataset.dd,next=(modalDist[k]||0)+dd;
+        if(next<0||(dd>0&&distSum>=dist.total)) return;
+        modalDist[k]=next;renderModalDetail();
+      }));
       $modalDetail.querySelectorAll('.variant-option').forEach(btn=>{
         btn.addEventListener('click',()=>{
           const {group,opt}=btn.dataset;
