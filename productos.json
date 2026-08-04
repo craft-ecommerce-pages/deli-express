@@ -15,7 +15,11 @@
     ],
     "variantes": [
       {
-        "options": [],
+        "options": [
+          "BBQ",
+          "Honey Mustard",
+          "Buffalo"
+        ],
         "type": "option"
       }
     ],
