@@ -26,6 +26,28 @@
     "sku": ""
   },
   {
+    "id": "fc6ad321-3ef4-411b-ac51-d6be27718db9",
+    "slug": "alitas-x20-unidades",
+    "nombre": "Alitas x20 unidades",
+    "precio": "15",
+    "precio_promo": "",
+    "categorias": [],
+    "descripcion": "La porción para la mesa completa: veinte alitas crocantes más dos porciones de papa y tu salsa preferida.",
+    "stock": null,
+    "imagenes": null,
+    "variantes": [
+      {
+        "options": [
+          "BBQ",
+          "Honey Mustard",
+          "Buffalo"
+        ],
+        "type": "option"
+      }
+    ],
+    "sku": ""
+  },
+  {
     "id": "971f0989-8110-46f9-87b2-588942ba9cb6",
     "slug": "alitas-x-5-unidades",
     "nombre": "Alitas x 5 unidades",
