@@ -15,15 +15,15 @@
     :root{
       --primary:#FF4D3D;
       --accent:#FF9500;
-      --bg:#0b0a0f;
-      --bg-2:#141019;
-      --surface:rgba(255,255,255,.055);
-      --surface-2:rgba(255,255,255,.09);
-      --border:rgba(255,255,255,.10);
-      --border-2:rgba(255,255,255,.18);
-      --text:#f6f4f1;
-      --text-soft:#a29ba8;
-      --text-dim:#6f6a76;
+      --bg:#f4f2f7;
+      --bg-2:#ffffff;
+      --surface:rgba(0,0,0,.035);
+      --surface-2:rgba(0,0,0,.055);
+      --border:rgba(0,0,0,.09);
+      --border-2:rgba(0,0,0,.16);
+      --text:#1a1720;
+      --text-soft:#5f5866;
+      --text-dim:#948d9c;
       --out-of-stock:#ff5a5a;
       --low-stock:#ffb020;
       --wa:#25D366;
@@ -85,7 +85,7 @@
       color:var(--text);font:inherit;font-size:14.5px;transition:border-color .2s,background .2s;
     }
     .search-box input::placeholder{color:var(--text-dim)}
-    .search-box input:focus{outline:none;border-color:var(--accent);background:rgba(255,255,255,.12)}
+    .search-box input:focus{outline:none;border-color:var(--accent);background:rgba(0,0,0,.05)}
     .search-box svg{position:absolute;left:16px;top:50%;transform:translateY(-50%);width:18px;height:18px;color:var(--text-soft)}
 
     .cat-strip{display:flex;gap:12px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:2px 2px 4px}
@@ -213,7 +213,7 @@
       position:fixed;left:0;right:0;bottom:0;z-index:200;
       height:calc(var(--nav-h) + env(safe-area-inset-bottom));
       padding-bottom:env(safe-area-inset-bottom);
-      background:rgba(15,12,20,.82);backdrop-filter:blur(20px);
+      background:rgba(255,255,255,.82);backdrop-filter:blur(20px);
       border-top:1px solid var(--border);
       display:flex;align-items:stretch;
     }
@@ -255,7 +255,7 @@
       background:var(--surface-2);color:var(--text);font:inherit;font-size:14px;outline:none;
       transition:border-color .2s,background .2s;
     }
-    .form-field input:focus,.form-field select:focus{border-color:var(--accent);background:rgba(255,255,255,.12)}
+    .form-field input:focus,.form-field select:focus{border-color:var(--accent);background:rgba(0,0,0,.05)}
     .form-field select option{background:var(--bg-2);color:var(--text)}
     .btn-reservation{
       width:100%;min-height:50px;margin-top:5px;padding:13px 16px;border:0;border-radius:14px;
