@@ -160,7 +160,7 @@
       "bebidas"
     ],
     "descripcion": "Bien fría, para bajar el antojo.",
-    "stock": null,
+    "stock": 0,
     "imagenes": [
       "/producto/gaseosa-pequena/images/gaseosa-pequena-1.webp"
     ],
