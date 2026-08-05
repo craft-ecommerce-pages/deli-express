@@ -127,7 +127,9 @@
     ],
     "descripcion": "Para compartir en la mesa.",
     "stock": null,
-    "imagenes": null,
+    "imagenes": [
+      "/producto/gaseosa-1-litro/images/gaseosa-1-litro-1.webp"
+    ],
     "variantes": [],
     "sku": ""
   },
