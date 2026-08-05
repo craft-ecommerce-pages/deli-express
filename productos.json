@@ -277,7 +277,7 @@
       "papas"
     ],
     "descripcion": "Carne de hamburguesa sobre papas a la francesa, coronada con queso cheddar fundido.",
-    "stock": null,
+    "stock": 0,
     "imagenes": [
       "/producto/papa-burger/images/papa-burger-1.webp"
     ],
