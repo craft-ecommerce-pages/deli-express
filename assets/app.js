@@ -385,7 +385,12 @@
       btn.addEventListener('click',()=>{
         const {group,opt}=btn.dataset;
         if(modalVariants[group]===opt) delete modalVariants[group];
-        else modalVariants[group]=opt;
+        else{
+          modalVariants[group]=opt;
+          const _g=(modalProduct.variantes||[]).find(g=>g.name===group);
+          const _o=_g&&(_g.options||[]).find(o=>getOptionKey(o)===opt);
+          if(_o&&_o.image){const _i=sliderImages.indexOf(_o.image);if(_i>=0)slideTo(_i);}
+        }
         renderModalDetail();
       });
     });
